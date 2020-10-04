@@ -12,12 +12,12 @@ service { 'apache2':
   require => Package['apache2'],
   enable => true,     # Start on boot
 }
-
-# python
-package { 'python-dev python-pip3':
-  ensure => installed,
-  require => Exec['apt-get update']
-}
+#
+# # python
+# package { 'python-dev python-pip3':
+#   ensure => installed,
+#   require => Exec['apt-get update']
+# }
 
 
 # Remove the default apache site conf
